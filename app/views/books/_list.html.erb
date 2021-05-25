@@ -30,7 +30,7 @@
       <!--<div class="form">-->
       
       <div class="text-danger">
-        <% if book_new.error.any? %>
+        <% if book_new.errors.any? %>
         <%= book_new.errors.count %>件のエラーが発生しました
         <% book_new.errors.full_messages.each do |message| %>
         <div><%= message %></div>
